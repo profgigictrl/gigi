@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de Login -->
+    <div id="login-page" class="page">
+        <div class="login-box">
+            <h1>Desbloqueie 6 Mémorias</h1>
+            <h3>Dica: minha melhor ação</h2>
+            <input type="text" id="password" placeholder="dd/mm/aaaa">
+            <h6 id="obscure-text">⚠️ Não use caracterer especial ex "@" "/" "?"" </h6>
+            <button onclick="checkPassword()">Entrar</button>
+        </div>
+    </div>
+
+    <!-- Página de Mural -->
+    <div id="mural-page" class="page hidden">
+        <div class="hearts" id="hearts-container"></div>
+        <h2>Nossas Memórias</h2>
+        <div class="polaroid-mural">
+            <div class="polaroid" onclick="showMessage(1)">
+                <img src="foto1.jpeg" alt="Foto 1">
+                <p>Clique aqui</p>
+            </div>
+            <div class="polaroid" onclick="showMessage(2)">
+                <img src="foto2.jpeg" alt="Foto 2">
+                <p>Clique aqui</p>
+            </div>
+            <div class="polaroid" onclick="showMessage(3)">
+                <img src="foto3.jpeg" alt="Foto 3">
+                <p>Clique aqui</p>
+            </div>
+            <div class="polaroid" onclick="showMessage(4)">
+                <img src="foto4.jpeg" alt="Foto 4">
+                <p>Clique aqui</p>
+            </div>
+            <div class="polaroid" onclick="showMessage(5)">
+                <img src="foto5.jpeg" alt="Foto 5">
+                <p>Clique aqui</p>
+            </div>
+            <div class="polaroid" onclick="showMessage(6)">
+                <img src="foto6.jpeg" alt="Foto 6">
+                <p>Clique aqui</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Janela de Mensagem -->
+    <div id="message-box" class="hidden">
+        <div id="message-content"></div>
+        <button onclick="closeMessage()">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
